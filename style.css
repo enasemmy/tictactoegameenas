@@ -1,0 +1,84 @@
+* {
+    padding: 0;  /* Reset padding for all elements */
+    margin: 0;  /* Reset margin for all elements */
+    box-sizing: border-box;  /* Include padding and border in element's width/height calculations */
+    font-family: "Raleway", sans-serif;  /* Set default font to Raleway */
+}
+
+body {
+    height: 100vh;  /* Set body height to 100% of viewport height */
+    background: linear-gradient( #ffffff, rgb(128, 128, 128));  /* Apply gradient background */
+}
+
+html {
+    font-size: 16px;  /* Set base font size */
+}
+
+.wrapper {
+    position: absolute;  /* Position the wrapper absolutely within its parent */
+    transform: translate(-50%, -50%);  /* Center the wrapper horizontally and vertically */
+    top: 50%;  /* Position the wrapper at 50% vertically */
+    left: 50%;  /* Position the wrapper at 50% horizontally */
+}
+
+.container {
+    width: 70vmin;  /* Set width based on the viewport's smaller dimension */
+    height: 70vmin;  /* Set height to match the width, forming a square */
+    display: flex;  /* Use flexbox for layout */
+    flex-wrap: wrap;  /* Allow child elements to wrap */
+    gap: 2vmin;  /* Add space between child elements */
+}
+
+.button-option {
+    background: rgb(0, 0, 0);  /* Set background color to black */
+    height: 22vmin;  /* Set height based on viewport's smaller dimension */
+    color: rgb(184, 180, 180);  /* Set text color to a light gray */
+    width: 22vmin;  /* Ensure width matches the height, creating a square */
+    border: none;  /* Remove default border */
+    border-radius: 8px;  /* Round the corners */
+    font-size: 12vmin;  /* Set a large font size for visibility */
+    box-shadow: 0 0 15px rgba(0, 0 , 0, 0.1);  /* Add a soft shadow for depth */
+}
+#restart {
+    font-size: 1.3em;  /* Slightly larger font for emphasis */
+    margin-top: 1.5em;  /* Adds space above the button */
+    padding: 1em;  /* Adds padding for a comfortable click area */
+    border-radius: 8px;  /* Rounded corners */
+    background-color: black;  /* Black background */
+    color: #ffffff;  /* White text for contrast */
+    border: none;  /* No default border */
+    position: relative;  /* Allows relative positioning if needed */
+    margin: 1.5em auto;  /* Center-align the button horizontally with margin */
+    display: block;  /* Ensure the button is displayed as a block-level element */
+}
+.popup {
+    background: linear-gradient( #ffffff, rgb(128, 128, 128));  /* Gradient background for the popup */
+    height: 100%;  /* Full height of the parent element */
+    width: 100%;  /* Full width of the parent element */
+    position: absolute;  /* Position it absolutely within its parent */
+    display: flex;  /* Use flexbox for centering content */
+    z-index: 2;  /* Ensure it appears above other elements */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    flex-direction: column;  /* Stack elements vertically */
+    gap: 1em;  /* Add space between elements */
+    font-size: 12vmin;  /* Large font size for visibility */
+}
+
+#new-game {
+    padding: 0.5em 1em;  /* Add padding for a comfortable click area */
+    background-color: black;  /* Black background for contrast */
+    color: #ffffff;  /* White text for visibility */
+    border-radius: 0.2em;  /* Slight rounding of corners */
+    border: none;  /* No default border */
+}
+
+#message {
+    color: #ffffff;  /* White text color for visibility */
+    text-align: center;  /* Center-align the text */
+    font-size: 1em;  /* Standard font size */
+}
+
+.popup.hide {
+    display: none;  /* Hide the popup when the "hide" class is applied */
+}
